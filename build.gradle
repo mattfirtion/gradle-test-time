@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories {
+    repositories {
+        maven{ url "http://elis-nexus.uscis.dhs.gov:8080/nexus/content/groups/public/" }
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.8.2'
+}
+
+test {
+    maxParallelForks = 5
+    forkEvery = 50
+}
