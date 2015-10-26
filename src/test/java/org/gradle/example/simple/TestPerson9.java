@@ -6,6 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TestPerson9 {
+  @Test
   public void testPerson() {
       Person p = new Person();
       p.setAge(20);
