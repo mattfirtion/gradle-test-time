@@ -6,8 +6,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TestPerson9 {
-  @Test
-  public void testPerson() {
+  @Test(timeout=100)
+  public void testPerson() throws InterruptedException {
+      Thread.sleep(500);
       Person p = new Person();
       p.setAge(20);
       p.setName("Fird Birfle");
